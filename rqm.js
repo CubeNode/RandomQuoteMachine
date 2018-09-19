@@ -19,6 +19,9 @@ $(document).ready(function(){
     },
       cache: false
     });
+    //$('.quote-btn').css('background-color', randomColor());
+    $('.jumbotron').css('background-color', randomColor());
+    //$('body').css('background-color', randomColor());
   });
 
   $(".twitter-share").on("click", function()      {
