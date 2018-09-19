@@ -1,0 +1,19 @@
+body {
+  background-color: #FFF;
+}
+
+h1 {
+  font-family: "Passion One";
+  color: #39F;
+}
+
+.jumbotron {
+  background-color: #39F;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.twitterbtn {
+  color: #39F;
+  background-color: #FFF;
+}
