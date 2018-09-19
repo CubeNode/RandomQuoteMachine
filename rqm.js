@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  //$('body').css('background-color', randomColor());
 
   $.ajax({
     url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
@@ -20,7 +19,7 @@ $(document).ready(function(){
       cache: false
     });
     //$('.quote-btn').css('background-color', randomColor());
-    $('.jumbotron').css('background-color', randomColor());
+    //$('.jumbotron').css('background-color', randomColor());
     //$('body').css('background-color', randomColor());
   });
 
@@ -29,9 +28,9 @@ $(document).ready(function(){
    });
 });
 
-var safeColors = ['00','33','66','99','cc','ff'];
+var safeColors = ['33','66','99','cc'];
 var rand = function() {
-    return Math.floor(Math.random()*6);
+    return Math.floor(Math.random()*4);
 };
 var randomColor = function() {
     var r = safeColors[rand()];
