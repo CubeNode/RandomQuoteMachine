@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -9,20 +11,20 @@
     <title>Random Quote Machine</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+    <div class="container-fluid">
+      <div class="row h-100">
+        <!--<div class="col-12">
           <h1 class="text-center my-5">Random Quote Machine</h1>
-        </div>
+        </div>-->
         <div class="col-2"></div>
         <div class="jumbotron col-8 my-5 quote">
-          <h4 class="text-center" id="quote"></h4>
-        </div>
-        <div class="col-12 text-center">
-          <a class="twitter-share" href="https://twitter.com/intent/tweet?text=" data-size="large" target="_blank"><button class="btn btn-primary twitterbtn"><i class="fab fa-twitter"></i>Tweet</button></a>
-          <button id="newquote" name="newquote" class="btn btn-primary">New Quote</button>
+          <h4 class="text-center align-self-center" id="quote"></h4>
         </div>
       </div>
+    </div>
+    <div class="btns">
+      <a id="tweet" href="https://twitter.com/intent/tweet?text=" data-size="large" target="_blank"><button id="twitterbtn" class="quote-btn"><i class="fab fa-twitter"></i>Tweet Quote</button></a>
+      <button id="newquote" name="newquote" class="quote-btn">New Quote</button>
     </div>
     <script type="text/javascript" src="rqm.js"></script>
   </body>

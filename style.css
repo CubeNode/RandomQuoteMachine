@@ -2,18 +2,79 @@ body {
   background-color: #FFF;
 }
 
+.container-fluid {
+  margin-bottom: 200px;
+}
+
 h1 {
   font-family: "Passion One";
   color: #39F;
 }
 
 .jumbotron {
+  position: relative;
   background-color: #39F;
   color: white;
+  min-width: 70vh;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+  -webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	transition: background-color 1s ease-out;
 }
 
-.twitterbtn {
+#quote {
+  font-size: 50px;
+}
+
+.btns {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.fa-twitter {
+  margin-right: 10px;
+}
+
+#twitterbtn {
   color: #39F;
   background-color: #FFF;
+  width: 50%;
+  left: 0;
+  border-right: 2px solid #39F;
+  border-top: 5px solid #39F;
+}
+
+#newquote {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #39F;
+  color: #FFF;
+  width: 50%;
+  right: 0;
+  border-left: 2px solid #39F;
+  border-top: 5px solid #39F;
+}
+
+.quote-btn {
+  height: 200px;
+  border: none;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quote-btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .quote-btn {
+    font-size: 6vw;
+  }
 }
