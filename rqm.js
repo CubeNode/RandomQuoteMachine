@@ -18,8 +18,6 @@ $(document).ready(function(){
     },
       cache: false
     });
-    //$('.quote-btn').css('background-color', randomColor());
-    //$('.jumbotron').css('background-color', randomColor());
     //$('body').css('background-color', randomColor());
   });
 
@@ -28,9 +26,9 @@ $(document).ready(function(){
    });
 });
 
-var safeColors = ['33','66','99','cc'];
+var safeColors = ['00', '33','66','99','cc', 'ff'];
 var rand = function() {
-    return Math.floor(Math.random()*4);
+    return Math.floor(Math.random()*6);
 };
 var randomColor = function() {
     var r = safeColors[rand()];
