@@ -1,5 +1,11 @@
 body {
-  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-color: #956dc6;
+  color: #fff3f3;
+  height: 100%;
+  -webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	transition: background-color 1s ease-out;
 }
 
 .container-fluid {
@@ -7,24 +13,18 @@ body {
 }
 
 .fa-github {
+  color: #333;
   font-size: 30px;
   margin: 20px;
 }
 
-h1 {
-  font-family: "Passion One";
-  color: #39F;
+.fa-github:hover {
+  color: #444;
 }
 
-.jumbotron {
-  position: relative;
-  background-color: #39F;
-  color: white;
-  width: 70vh;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
-  -webkit-transition: background-color 1s ease-out;
-	-moz-transition: background-color 1s ease-out;
-	transition: background-color 1s ease-out;
+h1 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5vh;
 }
 
 #quote {
@@ -47,32 +47,30 @@ h1 {
 }
 
 #twitterbtn {
-  color: #39F;
-  background-color: #FFF;
+  color: #FFF;
+  background-color: #333;
   width: 50%;
   left: 0;
-  border-right: 2px solid #39F;
-  border-top: 5px solid #39F;
+  border-right: 2px solid #222;
 }
 
 #twitterbtn:hover {
-  background-color: #EEE;
+  background-color: #444;
 }
 
 #newquote {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #39F;
+  background-color: #333;
   color: #FFF;
   width: 50%;
   right: 0;
-  border-left: 2px solid #39F;
-  border-top: 5px solid #39F;
+  border-left: 2px solid #222;
 }
 
 #newquote:hover {
-  background-color: #1489ff;
+  background-color: #444;
 }
 
 .quote-btn {
@@ -86,7 +84,27 @@ h1 {
   outline: none;
 }
 
+@media screen and (max-height: 800px) {
+
+    .quote-btn {
+      height: 70px;;
+    }
+}
+
 @media screen and (max-width: 800px) {
+  #twitterbtn {
+    width: 100%;
+  }
+
+  #newquote {
+    position: relative;
+    width: 100%;
+  }
+
+  #quote {
+    font-size: 50px;
+  }
+
   .quote-btn {
     font-size: 6vw;
   }
