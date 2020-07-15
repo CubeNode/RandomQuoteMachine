@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $.ajax({
-    url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand",
+    url: "https://quotesondesign.com/wp-json/wp/v2/posts?filter[orderby]=rand",
     success: function(q){
       var post = q.shift();
       $("#quote").html(post.content + "— " + post.title);
