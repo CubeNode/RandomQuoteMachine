@@ -1,0 +1,74 @@
+body {
+  background-repeat: no-repeat;
+  color: #956dc6;
+  background-color: #fff3f3;
+  height: 100%;
+  -webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	transition: background-color 1s ease-out;
+}
+
+.container-fluid {
+  margin-bottom: 200px;
+}
+
+.fa-github {
+  color: #333;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.fa-github:hover {
+  color: #444;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5vh;
+}
+
+#quote {
+  font-size: 3em;
+}
+
+.btns {
+  display: block;
+  width: 100vw;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.fa-twitter {
+  margin-right: 10px;
+}
+
+.btn {
+  display: block;
+  color: #956dc6;
+  background-color: #fff3f3;
+  width: 30%;
+  border: 2px solid #956dc6;
+  margin: 10px auto;
+  font-size: 1.8em;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn:hover {
+  color: #fff3f3;
+  background-color: #956dc6;
+  outline: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  #quote {
+    font-size: 2em;
+  }
+
+  .btn {
+    width: 50%;
+    font-size: 2em;
+  }
+}
