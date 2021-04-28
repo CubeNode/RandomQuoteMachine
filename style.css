@@ -48,6 +48,7 @@ h1 {
   color: #956dc6;
   background-color: #fff3f3;
   width: 30%;
+  min-height: 80px;
   border: 2px solid #956dc6;
   margin: 10px auto;
   font-size: 1.8em;
@@ -70,5 +71,9 @@ h1 {
   .btn {
     width: 50%;
     font-size: 2em;
+  }
+
+  #twitter-btn {
+    font-size: 1.8em;
   }
 }
